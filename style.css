@@ -1,0 +1,123 @@
+
+body {
+  font-family: arial;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+@media (min-width: 768px) {
+  .container {
+    display: grid;
+    grid-template-columns: 200px 1fr 300px;
+    grid-template-rows: auto 1fr auto;
+
+  }
+}
+
+header {
+  grid-column: span 3;
+  padding: 30px;
+  text-align: center;
+  font-size: 1.4em;
+  background-color: #369;
+  color: white;
+  background-image: url(images/banner.jpg);
+  text-shadow: 2px 3px 4px grey;
+}
+
+h1 {
+  margin-bottom: 1em;
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+/* Main section */
+
+main {
+  flex: 1;
+  padding: 20px;
+}
+
+.lunch {
+  background-image: url(images/lunch.jpeg);
+  background-repeat: no-repeat;
+  padding: 20px;
+}
+
+.producten {
+  background-image: url(images/boodschappen.jpg);
+  background-repeat:no-repeat;
+  padding: 20px;
+  text-align: center;
+  color: white;
+  padding: 120px;
+  font-size: 35px;
+  text-shadow: 3px 3px 4px darkgrey;
+}
+
+/* Navigation bar */
+
+nav {
+  background-color: #626262;
+  padding: 25px;
+
+}
+
+a:hover, a:active {
+  color: #f0ffaf;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Side bar */
+
+aside {
+  padding: 20px;
+  background-color: #f5fdd3;
+}
+
+.googlemap {
+  padding: 5px;
+  background-image: url("images/google_map.png");
+  background-repeat:no-repeat;
+}
+
+.sparimg {
+  background-image: url(images/spar.png);
+  background-repeat:no-repeat;
+  width: 100%;
+  padding: 20px;
+}
+
+.niximg {
+  background-image: url(images/nix.png);
+  background-repeat:no-repeat;
+  padding: 20px;
+}
+
+/* Footer */
+
+footer {
+  grid-column: span 3;
+  padding: 30px;
+  text-align: center;
+  font-size: 1.2em;
+  background-color: #e7efc3;
+  color: #626262;
+}
+
+footer a {
+  text-decoration: none;
+  color: #626262;
+}
+
+footer a:hover, a:active {
+  color: #06953f;
+}
